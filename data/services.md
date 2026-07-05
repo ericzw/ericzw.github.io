@@ -1,6 +1,6 @@
 ### Conference Reviewer
 
-- ICCV, ICLR, CVPR, ICML, NeurIPS, ACM MM, AAAI, MICCAI, ICASSP, ICME
+- ICCV, CVPR, ICLR, ICML, NeurIPS, ACM MM, AAAI, MICCAI, ICASSP, ICME
 
 ### Journal Reviewer
 
