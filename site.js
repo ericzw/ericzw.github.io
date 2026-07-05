@@ -70,10 +70,15 @@
       // Try to extract date pattern like "2026.06:" or "2025.06:"
       const dateMatch = content.match(/^(\d{4}\.\d{2}):\s*(.*)/);
       if (dateMatch) {
-        const text = dateMatch[2].replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        const text = dateMatch[2]
+          .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
+          .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
         html += `<li><span class="news-date">${dateMatch[1]}</span>${text}</li>`;
       } else {
-        html += `<li>${content.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')}</li>`;
+        const text = content
+          .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
+          .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        html += `<li>${text}</li>`;
       }
     }
     container.innerHTML = html;
@@ -86,8 +91,10 @@
 
     const entries = md.trim().split(/\n---\n/).filter(e => e.trim());
     let html = '';
+    let featuredCount = 0;
 
-    for (const entry of entries) {
+    for (let idx = 0; idx < entries.length; idx++) {
+      const entry = entries[idx];
       const lines = entry.trim().split('\n').filter(l => l.trim());
       if (lines.length < 3) continue;
 
@@ -95,12 +102,19 @@
       const authors = lines[1] || '';
       const venue = lines[2] || '';
 
+      // Check if this entry is featured
+      let isFeatured = false;
+
       // Extract asset id and links
       let assetId = '';
       let links = '';
       for (let i = 3; i < lines.length; i++) {
         if (lines[i].startsWith('@asset:')) {
           assetId = lines[i].replace('@asset:', '').trim();
+          continue;
+        }
+        if (lines[i].trim() === '@featured') {
+          isFeatured = true;
           continue;
         }
         const linkMatch = lines[i].match(/\[([^\]]+)\]\(([^)]+)\)/g);
@@ -114,16 +128,23 @@
         }
       }
 
+      if (isFeatured) featuredCount++;
+      const collapsed = !isFeatured;
+
       // Build thumbnail: try loading from asset folder
       const thumbPath = assetId ? `assets/papers/${assetId}/thumbnail.png` : '';
       const frameContent = assetId
-        ? `<img src="${thumbPath}" alt="${title}" onerror="this.parentElement.innerHTML='<span class=media-frame-placeholder>${venue}</span>'">`
+        ? `<img src="${thumbPath}" alt="${title}" loading="lazy" onerror="this.parentElement.innerHTML='<span class=media-frame-placeholder>${venue}</span>'">`
         : `<span class="media-frame-placeholder">${venue}</span>`;
 
+      // Build venue badge (e.g. "CVPR 2023")
+      const badgeText = venue.replace(/,.*$/, '').trim();
+
       html += `
-        <article class="panel media-item" data-asset="${assetId}">
+        <article class="panel media-item${collapsed ? ' collapsed' : ''}" data-asset="${assetId}">
           <div class="media-frame">
             ${frameContent}
+            <span class="venue-badge">${badgeText}</span>
           </div>
           <div class="media-body">
             <h3>${title}</h3>
@@ -135,7 +156,26 @@
         </article>`;
     }
 
+    // Add "Show more" button if there are non-featured entries
+    const hiddenCount = entries.length - featuredCount;
+    if (hiddenCount > 0) {
+      html += `<button class="show-more-btn" id="pub-show-more">Show all ${entries.length} publications</button>`;
+    }
+
     container.innerHTML = html;
+
+    // Show more toggle
+    const btn = document.getElementById('pub-show-more');
+    if (btn) {
+      let expanded = false;
+      btn.addEventListener('click', () => {
+        expanded = !expanded;
+        container.querySelectorAll('.media-item.collapsed').forEach(el => {
+          el.classList.toggle('hidden', expanded);
+        });
+        btn.textContent = expanded ? 'Show less' : `Show all ${entries.length} publications`;
+      });
+    }
 
     // Load abstracts from metadata.json
     container.querySelectorAll('article[data-asset]').forEach(article => {

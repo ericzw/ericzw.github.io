@@ -13,6 +13,6 @@
   "type": "journal",
   "text": "Develops GRAPE, a deep learning system leveraging noncontrast CT for large-scale gastric cancer screening, achieving AUC 0.927 on an 18,160-case external cohort and significantly outperforming radiologists in sensitivity and specificity.",
   "links": {
-    "paper": "https://doi.org/10.1038/s41591-025-03588-x"
+    "paper": "https://www.nature.com/articles/s41591-025-03785-6"
   }
 }
