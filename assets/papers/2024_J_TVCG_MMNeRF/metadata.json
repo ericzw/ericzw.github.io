@@ -1,0 +1,17 @@
+{
+  "id": "2024_J_TVCG_MMNeRF",
+  "title": "MM-NeRF: Multimodal-Guided 3D Multi-Style Transfer of Neural Radiance Field",
+  "authors": [
+    "Zijiang Yang",
+    "Zhongwei Qiu",
+    "Chang Xu",
+    "Dongmei Fu"
+  ],
+  "venue": "TVCG",
+  "year": 2024,
+  "type": "journal",
+  "text": "Proposes MM-NeRF for multimodal-guided 3D multi-style transfer with multi-head learning, cross-modal feature correction, and multi-view style consistent loss for high-quality stylized novel view synthesis.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2309.13607"
+  }
+}

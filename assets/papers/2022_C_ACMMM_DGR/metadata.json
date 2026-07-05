@@ -1,0 +1,17 @@
+{
+  "id": "2022_C_ACMMM_DGR",
+  "title": "Dynamic Graph Reasoning for Multi-person 3D Pose Estimation",
+  "authors": [
+    "Zhongwei Qiu",
+    "Qiansheng Yang",
+    "Jian Wang",
+    "Dongmei Fu"
+  ],
+  "venue": "ACM MM 2022",
+  "year": 2022,
+  "type": "conference",
+  "text": "Proposes dynamic graph reasoning with scale/depth-aware refinement and multi-root keypoints decoding for single-stage multi-person 3D pose estimation from monocular images.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2207.11341"
+  }
+}

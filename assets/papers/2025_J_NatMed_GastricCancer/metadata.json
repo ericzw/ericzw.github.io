@@ -1,0 +1,18 @@
+{
+  "id": "2025_J_NatMed_GastricCancer",
+  "title": "AI-based large-scale screening of gastric cancer from noncontrast CT imaging",
+  "authors": [
+    "Can Hu",
+    "Yingda Xia",
+    "Zhilin Zheng",
+    "Zhongwei Qiu",
+    "et al."
+  ],
+  "venue": "Nature Medicine",
+  "year": 2025,
+  "type": "journal",
+  "text": "Develops GRAPE, a deep learning system leveraging noncontrast CT for large-scale gastric cancer screening, achieving AUC 0.927 on an 18,160-case external cohort and significantly outperforming radiologists in sensitivity and specificity.",
+  "links": {
+    "paper": "https://doi.org/10.1038/s41591-025-03588-x"
+  }
+}

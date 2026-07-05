@@ -1,0 +1,17 @@
+{
+  "id": "2019_C_ICME_RSAN",
+  "title": "Learning Recurrent Structure-guided Attention Network for Multi-person Pose Estimation",
+  "authors": [
+    "Zhongwei Qiu",
+    "Kai Qiu",
+    "Jianlong Fu",
+    "Dongmei Fu"
+  ],
+  "venue": "ICME 2019 (Oral)",
+  "year": 2019,
+  "type": "conference",
+  "text": "Proposes a recurrent structure-guided attention network (SGAN) that leverages initial pose estimation as references to discover multi-scale pose features, reinforcing structure learning for multi-person pose estimation.",
+  "links": {
+    "paper": "https://ieeexplore.ieee.org/document/8784906"
+  }
+}

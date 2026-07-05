@@ -1,0 +1,17 @@
+{
+  "id": "2022_C_ECCV_FTVSR",
+  "title": "Learning spatiotemporal frequency-transformer for compressed video super-resolution",
+  "authors": [
+    "Zhongwei Qiu",
+    "Huan Yang",
+    "Jianlong Fu",
+    "Dongmei Fu"
+  ],
+  "venue": "ECCV 2022",
+  "year": 2022,
+  "type": "conference",
+  "text": "Proposes FTVSR, a spatiotemporal frequency-transformer that operates on DCT-based frequency tokens with time-space-frequency attention for compressed video super-resolution.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2208.03012"
+  }
+}

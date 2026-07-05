@@ -1,0 +1,22 @@
+{
+  "id": "2023_C_CVPR_PSVT",
+  "title": "PSVT: End-to-End Multi-person 3D Pose and Shape Estimation with Progressive Video Transformers",
+  "authors": [
+    "Zhongwei Qiu",
+    "Yang Qiansheng",
+    "Jian Wang",
+    "Haocheng Feng",
+    "Junyu Han",
+    "Errui Ding",
+    "Chang Xu",
+    "Dongmei Fu",
+    "Jingdong Wang"
+  ],
+  "venue": "CVPR 2023",
+  "year": 2023,
+  "type": "conference",
+  "text": "Proposes PSVT, an end-to-end multi-person 3D pose and shape estimation framework with progressive video transformers that captures global spatio-temporal dependencies and updates pose/shape queries at each frame via progressive decoding and pose-guided attention.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2303.09187"
+  }
+}

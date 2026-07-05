@@ -1,0 +1,19 @@
+{
+  "id": "2024_P_Preprint_CellClouds",
+  "title": "From Histopathology Images to Cell Clouds: Learning Slide Representations with Hierarchical Cell Transformer",
+  "authors": [
+    "Zijiang Yang*",
+    "Zhongwei Qiu*",
+    "Tiancheng Lin",
+    "Hanqing Chao",
+    "et al."
+  ],
+  "venue": "Preprint",
+  "year": 2024,
+  "type": "preprint",
+  "equalContribution": true,
+  "text": "Proposes CCFormer, a hierarchical cell transformer that learns slide representations from histopathology images by converting them into cell clouds with neighboring information embedding and hierarchical spatial perception.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2412.16715"
+  }
+}

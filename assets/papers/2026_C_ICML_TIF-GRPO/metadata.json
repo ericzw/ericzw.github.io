@@ -1,0 +1,24 @@
+{
+  "id": "2026_C_ICML_TIF-GRPO",
+  "title": "Regulating Anatomy-Aware Rewards via Trajectory-Integral Feedback for Volumetric Computed Tomography Analysis",
+  "authors": [
+    "Tianwei Lin*",
+    "Zhongwei Qiu*",
+    "Jie Cao",
+    "Jiang Liu",
+    "Wenjie Yan",
+    "Bo Zhang",
+    "Yu Zhong",
+    "Wenqiao Zhang",
+    "Yingda Xia",
+    "Ling Zhang"
+  ],
+  "venue": "ICML 2026",
+  "year": 2026,
+  "type": "conference",
+  "equalContribution": true,
+  "text": "Introduces Trajectory-Integral Feedback GRPO (TIF-GRPO), a control-theoretic reinforcement learning framework that regulates anatomy-aware rewards via integral feedback to suppress evaluation hallucinations and align optimization with clinical fidelity in 3D CT analysis.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2605.20277"
+  }
+}

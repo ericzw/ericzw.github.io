@@ -1,0 +1,17 @@
+{
+  "id": "2020_C_AAAI_DGCN",
+  "title": "DGCN: Dynamic Graph Convolutional Network for Efficient Multi-person Pose Estimation",
+  "authors": [
+    "Zhongwei Qiu",
+    "Kai Qiu",
+    "Jianlong Fu",
+    "Dongmei Fu"
+  ],
+  "venue": "AAAI 2020",
+  "year": 2020,
+  "type": "conference",
+  "text": "Proposes DGCN, a pyramid dynamic graph convolutional network that learns body relations dynamically for efficient bottom-up multi-person pose estimation.",
+  "links": {
+    "paper": "https://ojs.aaai.org/index.php/AAAI/article/view/6867"
+  }
+}

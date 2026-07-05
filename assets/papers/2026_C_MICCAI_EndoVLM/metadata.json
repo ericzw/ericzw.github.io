@@ -1,0 +1,22 @@
+{
+  "id": "2026_C_MICCAI_EndoVLM",
+  "title": "EndoVLM: An Endoscopy Vision-Language Pre-training Model via Anatomy-Guided Sparsity and Progressive Alignment",
+  "authors": [
+    "Zhenyu Yi",
+    "Jianwei Xu",
+    "Yue Hu",
+    "Zhongwei Qiu",
+    "Sijing Li",
+    "Liang Huang",
+    "Bin Lv",
+    "Ling Zhang",
+    "Yingda Xia"
+  ],
+  "venue": "MICCAI 2026",
+  "year": 2026,
+  "type": "conference",
+  "text": "Presents EndoVLM, a vision-language foundation model pre-trained on 348K endoscopic examinations with anatomy-guided sparse pooling and progressive alignment, significantly outperforming existing models on risk stratification, polyp segmentation, and zero-shot generalization.",
+  "links": {
+    "paper": "assets/papers/2026_C_MICCAI_EndoVLM/paper.pdf"
+  }
+}

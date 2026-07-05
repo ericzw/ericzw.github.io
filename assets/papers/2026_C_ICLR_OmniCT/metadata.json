@@ -1,0 +1,20 @@
+{
+  "id": "2026_C_ICLR_OmniCT",
+  "title": "OmniCT: Towards a Unified Slice-Volume LVLM for Comprehensive CT Analysis",
+  "authors": [
+    "Tianwei Lin*",
+    "Zhongwei Qiu*",
+    "Wenqiao Zhang",
+    "Jiang Liu",
+    "Yihan Xie",
+    "et al."
+  ],
+  "venue": "ICLR 2026",
+  "year": 2026,
+  "type": "conference",
+  "equalContribution": true,
+  "text": "Proposes OmniCT, a unified slice-volume Large Vision-Language Model for CT analysis that bridges 2D slice and 3D volumetric understanding through Spatial Consistency Enhancement and Organ-level Semantic Enhancement, consistently outperforming existing methods across diverse clinical tasks.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2602.16110"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "2023_J_TPAMI_FTVSR",
+  "title": "Learning Degradation-robust Spatiotemporal Frequency-Transformer for Video Super-Resolution",
+  "authors": [
+    "Zhongwei Qiu",
+    "Huan Yang",
+    "Jianlong Fu",
+    "Daochang Liu",
+    "Chang Xu",
+    "Dongmei Fu"
+  ],
+  "venue": "TPAMI",
+  "year": 2023,
+  "type": "journal",
+  "text": "Proposes a degradation-robust spatiotemporal frequency-transformer for video super-resolution, extending FTVSR with enhanced frequency attention and degradation adaptation for compressed video restoration.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2208.03012"
+  }
+}

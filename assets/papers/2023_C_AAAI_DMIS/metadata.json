@@ -1,0 +1,16 @@
+{
+  "id": "2023_C_AAAI_DMIS",
+  "title": "DMIS: Dynamic Mesh-based Importance Sampling for Training Physics-Informed Neural Networks",
+  "authors": [
+    "Zijiang Yang",
+    "Zhongwei Qiu",
+    "Dongmei Fu"
+  ],
+  "venue": "AAAI 2023",
+  "year": 2023,
+  "type": "conference",
+  "text": "Proposes Dynamic Mesh-based Importance Sampling (DMIS) for training Physics-Informed Neural Networks, constructing a dynamic triangular mesh to efficiently estimate sample weights via importance sampling, achieving up to 46% lower error and 5x faster convergence on nonlinear PDE benchmarks.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2211.13944"
+  }
+}

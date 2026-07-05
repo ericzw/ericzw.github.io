@@ -1,0 +1,18 @@
+{
+  "id": "2024_C_MICCAI_IHCSurv",
+  "title": "IHCSurv: Effective Immunohistochemistry Priors for Cancer Survival Analysis in Gigapixel Multi-stain Whole Slide Images",
+  "authors": [
+    "Yejia Zhang",
+    "Hanqing Chao",
+    "Zhongwei Qiu",
+    "Wenbin Liu",
+    "et al."
+  ],
+  "venue": "MICCAI 2024",
+  "year": 2024,
+  "type": "conference",
+  "text": "Proposes VPTSurv, an end-to-end visual prompt tuning framework for survival analysis from whole slide images, incorporating multi-stain immunohistochemistry priors via tunable adaptors.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2409.03804"
+  }
+}

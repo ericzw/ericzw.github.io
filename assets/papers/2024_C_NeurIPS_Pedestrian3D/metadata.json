@@ -1,0 +1,20 @@
+{
+  "id": "2024_C_NeurIPS_Pedestrian3D",
+  "title": "Pedestrian-Centric 3D Pre-collision Pose and Shape Estimation from Dashcam Perspective",
+  "authors": [
+    "Meijun Wang",
+    "Yu Meng",
+    "Zhongwei Qiu",
+    "Chao Zheng",
+    "Yan Xu",
+    "Xiaorui Peng",
+    "Jiao Gao"
+  ],
+  "venue": "NeurIPS 2024",
+  "year": 2024,
+  "type": "conference",
+  "text": "Proposes PPSENet for pedestrian pre-collision 3D pose and shape estimation from dashcam video, with a two-stage pipeline (image-to-2D-pose and pose-to-3D-mesh) and the PVCP benchmark dataset.",
+  "links": {
+    "paper": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/2c428bb07062012236519b589db63f34-Abstract-Conference.html"
+  }
+}

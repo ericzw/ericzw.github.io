@@ -1,0 +1,17 @@
+{
+  "id": "2024_J_NeuralNetworks_KGBottleneck",
+  "title": "Knowledge graph information bottleneck enhanced molecular representation learning",
+  "authors": [
+    "Jiaxin Dai",
+    "Dongmei Fu",
+    "Zhongwei Qiu",
+    "Lingwei Ma",
+    "Dawei Zhang"
+  ],
+  "venue": "Neural Networks",
+  "year": 2024,
+  "type": "journal",
+  "links": {
+    "paper": "https://doi.org/10.1016/j.neunet.2025.107560"
+  }
+}

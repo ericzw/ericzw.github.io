@@ -1,0 +1,13 @@
+- 2023.11 Scholarship from Baosteel Education Foundation
+- 2023.05 CVPR 2023 Student Scholarship
+- 2022.12 Scholarship from Zenith Steel Group
+- 2022.12 Star of Academic, University of Science and Technology Beijing
+- 2022.12 Excellent Graduate Student, University of Science and Technology Beijing
+- 2022.10 ECCV 2022 Student Scholarship
+- 2022.10 ACM Multimedia 2022 Student Scholarship
+- 2021.12 Star of Tomorrow, Microsoft Research Asia
+- 2021.02 Star of Tomorrow, Microsoft Research Asia
+- 2019.12 Silver Medal (10/1300+) in RSNA Intracranial Hemorrhage Detection, RSNA-Kaggle
+- 2018.09 The 2nd place of ChinaMM 2018 JD AI Fashion-Challenge
+- 2018.06 Excellent Graduation Thesis, University of Science and Technology Beijing
+- 2018.06 Outstanding Graduate, University of Science and Technology Beijing

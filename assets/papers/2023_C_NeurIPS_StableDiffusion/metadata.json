@@ -1,0 +1,17 @@
+{
+  "id": "2023_C_NeurIPS_StableDiffusion",
+  "title": "Stable Diffusion is Unstable",
+  "authors": [
+    "Chengbin Du",
+    "Yanxi Li",
+    "Zhongwei Qiu",
+    "Chang Xu"
+  ],
+  "venue": "NeurIPS 2023",
+  "year": 2023,
+  "type": "conference",
+  "text": "Reveals robustness vulnerabilities in text-to-image models by proposing Auto-attack on Text-to-image Models (ATM), which generates adversarial prompts via Gumbel Softmax relaxation to prevent desired subject generation.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2306.02583"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "2026_C_ICLR_TumorChain",
+  "title": "TumorChain: Interleaved Multimodal Chain-of-Thought Reasoning for Traceable Clinical Tumor Analysis",
+  "authors": [
+    "Sijing Li*",
+    "Zhongwei Qiu*",
+    "Jiang Liu",
+    "Wenqiao Zhang",
+    "Tianwei Lin",
+    "Yihan Xie",
+    "et al."
+  ],
+  "venue": "ICLR 2026",
+  "year": 2026,
+  "type": "conference",
+  "equalContribution": true,
+  "text": "Proposes TumorChain, a multimodal interleaved chain-of-thought reasoning framework for traceable clinical tumor analysis, with a 1.5M CoT-labeled VQA benchmark spanning findings, impressions, and pathology predictions from 3D CT scans.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2603.05867"
+  }
+}

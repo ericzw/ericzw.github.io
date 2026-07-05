@@ -1,0 +1,16 @@
+{
+  "id": "2024_J_Neurocomputing_MultiScaleSAM",
+  "title": "Multi-scale contrastive adaptor learning for segmenting anything in underperformed scenes",
+  "authors": [
+    "Ke Zhou",
+    "Zhongwei Qiu",
+    "Dongmei Fu"
+  ],
+  "venue": "Neurocomputing",
+  "year": 2024,
+  "type": "journal",
+  "text": "Proposes MCA-SAM, a multi-scale contrastive adaptor learning framework for SAM that enhances token-level and sample-level discriminability in underperformed segmentation scenarios.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2408.05936"
+  }
+}

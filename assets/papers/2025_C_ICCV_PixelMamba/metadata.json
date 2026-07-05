@@ -1,0 +1,19 @@
+{
+  "id": "2025_C_ICCV_PixelMamba",
+  "title": "Bridging Local Inductive Bias and Long-Range Dependencies with Pixel-Mamba for End-to-end Whole Slide Image Analysis",
+  "authors": [
+    "Zhongwei Qiu",
+    "Hanqing Chao",
+    "Tiancheng Lin",
+    "Wanxing Chang",
+    "Zijiang Yang",
+    "et al."
+  ],
+  "venue": "ICCV 2025",
+  "year": 2025,
+  "type": "conference",
+  "text": "Introduces Pixel-Mamba, an end-to-end architecture for gigapixel whole slide image analysis that combines the Mamba state-space model with progressive token expansion to capture both local and global information, matching or surpassing foundation models pretrained on millions of WSIs without pathology-specific pretraining.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2412.16711"
+  }
+}

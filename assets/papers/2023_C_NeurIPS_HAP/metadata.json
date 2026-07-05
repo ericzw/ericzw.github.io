@@ -1,0 +1,19 @@
+{
+  "id": "2023_C_NeurIPS_HAP",
+  "title": "HAP: Structure-Aware Masked Image Modeling for Human-Centric Perception",
+  "authors": [
+    "Junkun Yuan",
+    "Xinyu Zhang",
+    "Hao Zhou",
+    "Jian Wang",
+    "Zhongwei Qiu",
+    "et al."
+  ],
+  "venue": "NeurIPS 2023",
+  "year": 2023,
+  "type": "conference",
+  "text": "Introduces HAP, a structure-aware masked image modeling framework for human-centric pre-training that leverages human body part priors to guide masking and structure-invariant alignment.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2310.20695"
+  }
+}

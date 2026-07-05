@@ -1,0 +1,17 @@
+{
+  "id": "2022_C_ACMMM_IVT",
+  "title": "IVT: An End-to-End Instance-guided Video Transformer for 3D Pose Estimation",
+  "authors": [
+    "Zhongwei Qiu",
+    "Qiansheng Yang",
+    "Jian Wang",
+    "Dongmei Fu"
+  ],
+  "venue": "ACM MM 2022 (Oral)",
+  "year": 2022,
+  "type": "conference",
+  "text": "Proposes IVT, an end-to-end instance-guided video transformer with spatial and temporal attention mechanisms for monocular 3D human pose estimation from video.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2208.03431"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "2026_C_MICCAI_E-MRL",
+  "title": "E-MRL: Cross-view Aligned Evidence-driven Multimodal Reinforcement Learning for Reliable 3D Tumor Analysis",
+  "authors": [
+    "Sijing Li",
+    "Zhongwei Qiu",
+    "Zhuoya Wang",
+    "Boxiang Yun",
+    "Zhenyu Yi",
+    "Jianwei Xu",
+    "Wenqiao Zhang",
+    "Yingda Xia",
+    "Ling Zhang"
+  ],
+  "venue": "MICCAI 2026",
+  "year": 2026,
+  "type": "conference",
+  "text": "Proposes Evidence-MRL, a reinforcement learning framework that formulates 3D CT report generation as a diagnosis-localization-verification process, training VLMs to ground diagnoses in verifiable key evidence slices with cross-view consistency rewards to reduce visual hallucinations.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2606.23888"
+  }
+}

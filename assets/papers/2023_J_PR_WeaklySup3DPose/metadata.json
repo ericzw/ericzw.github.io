@@ -1,0 +1,17 @@
+{
+  "id": "2023_J_PR_WeaklySup3DPose",
+  "title": "Weakly-supervised Pre-training for 3D Human Pose Estimation via Perspective Knowledge",
+  "authors": [
+    "Zhongwei Qiu",
+    "Kai Qiu",
+    "Jianlong Fu",
+    "Dongmei Fu"
+  ],
+  "venue": "Pattern Recognition",
+  "year": 2023,
+  "type": "journal",
+  "text": "Proposes weakly-supervised pre-training for 3D pose estimation using perspective knowledge to extract relative depth from 2D images, improving generalization without requiring 3D annotations.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2211.11983"
+  }
+}
