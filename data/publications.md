@@ -14,7 +14,7 @@ MICCAI 2026
 Regulating Anatomy-Aware Rewards via Trajectory-Integral Feedback for Volumetric Computed Tomography Analysis
 Tianwei Lin*, **Zhongwei Qiu***, Jie Cao, Jiang Liu, Wenjie Yan, Bo Zhang, Yu Zhong, Wenqiao Zhang, Yingda Xia, Ling Zhang.
 ICML 2026, (* Equal contribution)
-[paper](https://arxiv.org/abs/2605.20277)
+[paper](https://arxiv.org/abs/2605.20277) [code](https://github.com/ZJU4HealthCare/TIF-GRPO)
 @asset: 2026_C_ICML_TIF-GRPO
 @featured
 ---
