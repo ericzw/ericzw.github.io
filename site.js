@@ -72,7 +72,12 @@
       if (dateMatch) {
         const text = dateMatch[2]
           .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
-          .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+          .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+          .replace(/([\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}])/gu, (m) => {
+            if (m === '🎉') return '<span class="news-emoji emoji-party">🎉</span>';
+            if (m === '🔥') return '<span class="news-emoji emoji-fire">🔥</span>';
+            return `<span class="news-emoji">${m}</span>`;
+          });
         html += `<li><span class="news-date">${dateMatch[1]}</span>${text}</li>`;
       } else {
         const text = content
