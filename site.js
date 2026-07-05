@@ -249,7 +249,7 @@
           </div>
           <div class="media-body">
             <h3>${title}</h3>
-            ${role ? `<p class="venue">${role}</p>` : ''}
+            ${role ? `<p class="venue">${role.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')}</p>` : ''}
             ${desc ? `<h4 class="project-about-heading">About</h4><p class="authors">${desc.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')}</p>` : ''}
             ${links ? `<div class="links">${links}</div>` : ''}
           </div>
@@ -264,28 +264,41 @@
     const container = document.getElementById('experience-content');
     if (!container || !md) return;
 
-    let html = '';
-    const lines = md.trim().split('\n');
-    let currentSection = '';
+    const entries = md.trim().split(/\n---\n/).filter(e => e.trim());
+    let html = '<div class="exp-grid">';
 
-    for (const line of lines) {
-      if (line.startsWith('## ') || line.startsWith('### ')) {
-        if (currentSection) html += '</ul>';
-        html += `<h3>${line.replace(/^#+\s*/, '')}</h3><ul>`;
-        currentSection = line;
-      } else if (line.startsWith('- ')) {
-        const content = line.slice(2);
-        // Try to bold the period part
-        const periodMatch = content.match(/^(\d{4}[\s\S]*?),\s*(.*)/);
-        if (periodMatch) {
-          html += `<li><span class="exp-period">${periodMatch[1]}</span>, ${periodMatch[2]}</li>`;
+    for (const entry of entries) {
+      const lines = entry.trim().split('\n').filter(l => l.trim());
+      let logo = '';
+      let name = '';
+      let role = '';
+
+      for (const line of lines) {
+        if (line.startsWith('@logo:')) {
+          logo = line.replace('@logo:', '').trim();
+        } else if (!name) {
+          name = line.trim();
         } else {
-          html += `<li>${content}</li>`;
+          role = line.trim();
         }
       }
-    }
-    if (currentSection) html += '</ul>';
 
+      const logoContent = logo
+        ? `<img src="${logo}" alt="${name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+           <span class="exp-logo-fallback" style="display:none">${name.charAt(0)}</span>`
+        : `<span class="exp-logo-fallback">${name.charAt(0)}</span>`;
+
+      html += `
+        <div class="exp-card">
+          <div class="exp-logo">${logoContent}</div>
+          <div class="exp-info">
+            <span class="exp-name">${name}</span>
+            <span class="exp-role">${role}</span>
+          </div>
+        </div>`;
+    }
+
+    html += '</div>';
     container.innerHTML = html;
   }
 
