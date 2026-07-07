@@ -11,6 +11,7 @@
   "venue": "Neural Networks",
   "year": 2024,
   "type": "journal",
+  "text": "Proposes KGIB, a knowledge graph information bottleneck framework for molecular representation learning that compresses a molecule-functional group-element knowledge graph into minimal sufficient subgraphs and aligns them with topology structures, reducing knowledge noise while outperforming state-of-the-art baselines across ten property prediction tasks.",
   "links": {
     "paper": "https://doi.org/10.1016/j.neunet.2025.107560"
   }
