@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="snowBg" x1="8" y1="8" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3EC6F0"/>
+      <stop offset="1" stop-color="#1E6FD6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="24" cy="24" r="22" fill="url(#snowBg)"/>
+  <g stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none">
+    <g>
+      <line x1="24" y1="10" x2="24" y2="38"/>
+      <path d="M24 15l-3-3M24 15l3-3"/>
+      <path d="M24 33l-3 3M24 33l3 3"/>
+    </g>
+    <g transform="rotate(60 24 24)">
+      <line x1="24" y1="10" x2="24" y2="38"/>
+      <path d="M24 15l-3-3M24 15l3-3"/>
+      <path d="M24 33l-3 3M24 33l3 3"/>
+    </g>
+    <g transform="rotate(120 24 24)">
+      <line x1="24" y1="10" x2="24" y2="38"/>
+      <path d="M24 15l-3-3M24 15l3-3"/>
+      <path d="M24 33l-3 3M24 33l3 3"/>
+    </g>
+  </g>
+</svg>

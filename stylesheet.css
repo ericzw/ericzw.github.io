@@ -147,6 +147,68 @@ ul {
   margin-bottom: 12px;
 }
 
+/* ===== Deployed-in Products Strip ===== */
+.profile-deployments {
+  margin-top: 24px;
+}
+
+.deploy-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.deploy-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.deploy-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface-muted);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.deploy-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.deploy-chip img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.deploy-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.deploy-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.deploy-tech {
+  font-size: 11px;
+  color: var(--muted);
+}
+
 .profile-interests {
   margin-top: 14px;
 }

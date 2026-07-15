@@ -47,6 +47,8 @@
     let bioHtml = '';
 
     for (const line of lines) {
+      // Stop bio rendering at the @deployed marker block
+      if (line.trim().startsWith('@deployed:')) break;
       if (line.trim()) {
         let processed = line
           .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
@@ -56,6 +58,53 @@
     }
 
     container.innerHTML = bioHtml;
+  }
+
+  // Render the "deployed in real-world products" badge strip
+  function renderDeployments(md) {
+    const container = document.getElementById('deployments-content');
+    if (!container || !md) return;
+
+    const lines = md.trim().split('\n');
+    let label = '';
+    const chips = [];
+    let inBlock = false;
+
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (trimmed.startsWith('@deployed:')) {
+        label = trimmed.replace('@deployed:', '').trim();
+        inBlock = true;
+        continue;
+      }
+      if (!inBlock || !trimmed) continue;
+      // Stop at the first separator: the @deployed block ends here
+      if (trimmed === '---') break;
+      // Format: [name](link) :: logo :: tech
+      const parts = trimmed.split('::').map(p => p.trim());
+      const linkMatch = parts[0].match(/\[([^\]]+)\]\(([^)]+)\)/);
+      if (!linkMatch) continue;
+      const name = linkMatch[1];
+      const url = linkMatch[2];
+      const logo = parts[1] || '';
+      const tech = parts[2] || '';
+      const img = logo
+        ? `<img src="${logo}" alt="${name}" onerror="this.style.display='none'">`
+        : '';
+      const textBlock = tech
+        ? `<span class="deploy-text"><span class="deploy-name">${name}</span><span class="deploy-tech">${tech}</span></span>`
+        : `<span class="deploy-text"><span class="deploy-name">${name}</span></span>`;
+      chips.push(`<a class="deploy-chip" href="${url}" target="_blank">${img}${textBlock}</a>`);
+    }
+
+    if (!chips.length) {
+      container.innerHTML = '';
+      return;
+    }
+
+    container.innerHTML =
+      (label ? `<div class="deploy-label">${label}</div>` : '') +
+      `<div class="deploy-strip">${chips.join('')}</div>`;
   }
 
   // Render news list
@@ -207,6 +256,8 @@
     let html = '';
 
     for (const entry of entries) {
+      // Skip the @deployed block (rendered separately by renderDeployments)
+      if (entry.trim().startsWith('@deployed')) continue;
       const lines = entry.trim().split('\n');
       if (lines.length < 2) continue;
 
@@ -358,6 +409,7 @@
     ]);
 
     renderBio(home);
+    renderDeployments(projects);
     renderNews(news);
     renderPublications(publications);
     renderProjects(projects);
