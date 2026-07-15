@@ -157,7 +157,7 @@ ul {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--muted);
+  color: var(--text);
   margin-bottom: 8px;
 }
 
