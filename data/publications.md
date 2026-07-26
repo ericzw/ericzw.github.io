@@ -8,7 +8,7 @@ MICCAI 2026, (✉ Corresponding author)
 EndoVLM: An Endoscopy Vision-Language Pre-training Model via Anatomy-Guided Sparsity and Progressive Alignment
 Zhenyu Yi, Jianwei Xu, Yue Hu, **Zhongwei Qiu**, Sijing Li, Liang Huang, Bin Lv, Ling Zhang, Yingda Xia.
 MICCAI 2026
-[paper](assets/papers/2026_C_MICCAI_EndoVLM/paper.pdf)
+[code](https://github.com/Scatteredrain/EndoVLM)
 @asset: 2026_C_MICCAI_EndoVLM
 ---
 Regulating Anatomy-Aware Rewards via Trajectory-Integral Feedback for Volumetric Computed Tomography Analysis
