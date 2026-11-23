@@ -1,7 +1,8 @@
 GENECraft: A Function- and Prior-Constrained Discrete Dynamical System for Controllable Regulatory DNA Design
-Jue Wang, Tongyue Xu, Cheng Tan, Wenqi Zhong, Guangyu Guo, Ling Zhang, **Zhongwei Qiu**, Stan Z Li.
-bioRxiv 2026 (Preprint)
+Jue Wang*, Tongyue Xu*, Cheng Tan, Wenqi Zhong, Guangyu Guo, Ling Zhang, **Zhongwei Qiu✉**, Stan Z. Li✉.
+bioRxiv 2026 (Preprint), (* Equal contribution; ✉ Corresponding authors)
 [paper](https://doi.org/10.64898/2026.11.16.767190)
+@asset: 2026_P_bioRxiv_GENECraft
 @featured
 ---
 E-MRL: Cross-view Aligned Evidence-driven Multimodal Reinforcement Learning for Reliable 3D Tumor Analysis

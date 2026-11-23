@@ -1,0 +1,3 @@
+{
+  "text": "GENECraft is a training-free Function- and Prior-Constrained Discrete Dynamical System for controllable regulatory DNA design. It couples a genomic language model prior (Carbon) with a functional oracle (AlphaGenome) through joint inference-time optimization and feasibility-first trajectory readout."
+}
