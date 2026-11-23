@@ -1,3 +1,9 @@
+GENECraft: A Function- and Prior-Constrained Discrete Dynamical System for Controllable Regulatory DNA Design
+Jue Wang, Tongyue Xu, Cheng Tan, Wenqi Zhong, Guangyu Guo, Ling Zhang, **Zhongwei Qiu**, Stan Z Li.
+bioRxiv 2026 (Preprint)
+[paper](https://doi.org/10.64898/2026.11.16.767190)
+@featured
+---
 E-MRL: Cross-view Aligned Evidence-driven Multimodal Reinforcement Learning for Reliable 3D Tumor Analysis
 Sijing Li, **Zhongwei Qiu✉**, Zhuoya Wang, Boxiang Yun, Zhenyu Yi, Jianwei Xu, Wenqiao Zhang, Yingda Xia, Ling Zhang.
 MICCAI 2026, (✉ Corresponding author)
