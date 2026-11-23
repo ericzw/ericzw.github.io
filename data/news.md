@@ -1,3 +1,4 @@
+- 2026.11: 🎉 [**PPSG**](https://ieeexplore.ieee.org/abstract/document/11803248) is accepted by **TIP**.
 - 2026.06: 🎉 2 papers ([**E-MRL**](https://arxiv.org/abs/2606.23888) and [**EndoVLM**](https://github.com/Scatteredrain/EndoVLM)) are accepted by **MICCAI 2026**.
 - 2026.05: 🎉 [**TIF-GRPO**](https://arxiv.org/abs/2605.20277) is accepted by **ICML 2026**.
 - 2026.01: 🎉 [**TumorChain**](https://arxiv.org/abs/2603.05867) and [**OmniCT**](https://arxiv.org/abs/2602.16110) are accepted by **ICLR 2026**.
