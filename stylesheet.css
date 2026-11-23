@@ -149,16 +149,11 @@ ul {
 
 /* ===== Deployed-in Products Strip ===== */
 .profile-deployments {
-  margin-top: 24px;
+  margin-bottom: 20px;
 }
 
-.deploy-label {
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text);
-  margin-bottom: 8px;
+.profile-deployments:empty {
+  display: none;
 }
 
 .deploy-strip {
@@ -342,6 +337,34 @@ ul {
   gap: 20px;
 }
 
+.publications-hint {
+  margin: -8px 0 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.publications-window {
+  height: min(680px, 72vh);
+  height: min(680px, 72svh);
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted) var(--surface-muted);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-muted);
+  padding: 14px;
+}
+
+.publications-window:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.publications-window .media-item {
+  box-shadow: none;
+}
+
 .media-item {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -352,28 +375,6 @@ ul {
   grid-template-columns: 200px minmax(0, 1fr);
   gap: 20px;
   align-items: start;
-}
-
-/* Collapsed state: hidden by default, toggled via JS */
-.media-item.collapsed:not(.hidden) {
-  display: none;
-}
-
-.show-more-btn {
-  display: block;
-  margin: 16px auto;
-  padding: 10px 24px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  font-size: 14px;
-  color: var(--accent);
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.show-more-btn:hover {
-  background: var(--line);
 }
 
 .media-frame {
@@ -680,6 +681,12 @@ ul {
 
 /* ===== Responsive: Tablet ===== */
 @media (max-width: 600px) {
+  .publications-window {
+    height: min(560px, 68vh);
+    height: min(560px, 68svh);
+    padding: 8px;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     gap: 24px;

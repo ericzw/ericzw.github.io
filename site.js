@@ -60,20 +60,18 @@
     container.innerHTML = bioHtml;
   }
 
-  // Render the "deployed in real-world products" badge strip
+  // Render product links as the introduction to Projects & Products.
   function renderDeployments(md) {
     const container = document.getElementById('deployments-content');
     if (!container || !md) return;
 
     const lines = md.trim().split('\n');
-    let label = '';
     const chips = [];
     let inBlock = false;
 
     for (const line of lines) {
       const trimmed = line.trim();
       if (trimmed.startsWith('@deployed:')) {
-        label = trimmed.replace('@deployed:', '').trim();
         inBlock = true;
         continue;
       }
@@ -102,9 +100,7 @@
       return;
     }
 
-    container.innerHTML =
-      (label ? `<div class="deploy-label">${label}</div>` : '') +
-      `<div class="deploy-strip">${chips.join('')}</div>`;
+    container.innerHTML = `<div class="deploy-strip">${chips.join('')}</div>`;
   }
 
   // Render news list
@@ -145,7 +141,6 @@
 
     const entries = md.trim().split(/\n---\n/).filter(e => e.trim());
     let html = '';
-    let featuredCount = 0;
 
     for (let idx = 0; idx < entries.length; idx++) {
       const entry = entries[idx];
@@ -156,19 +151,12 @@
       const authors = lines[1] || '';
       const venue = lines[2] || '';
 
-      // Check if this entry is featured
-      let isFeatured = false;
-
       // Extract asset id and links
       let assetId = '';
       let links = '';
       for (let i = 3; i < lines.length; i++) {
         if (lines[i].startsWith('@asset:')) {
           assetId = lines[i].replace('@asset:', '').trim();
-          continue;
-        }
-        if (lines[i].trim() === '@featured') {
-          isFeatured = true;
           continue;
         }
         const linkMatch = lines[i].match(/\[([^\]]+)\]\(([^)]+)\)/g);
@@ -182,9 +170,6 @@
         }
       }
 
-      if (isFeatured) featuredCount++;
-      const collapsed = !isFeatured;
-
       // Build thumbnail: try loading from asset folder
       const thumbPath = assetId ? `assets/papers/${assetId}/thumbnail.png` : '';
       const frameContent = assetId
@@ -195,7 +180,7 @@
       const badgeText = venue.replace(/,.*$/, '').trim();
 
       html += `
-        <article class="panel media-item${collapsed ? ' collapsed' : ''}" data-asset="${assetId}">
+        <article class="panel media-item" data-asset="${assetId}">
           <div class="media-frame">
             ${frameContent}
             <span class="venue-badge">${badgeText}</span>
@@ -210,26 +195,7 @@
         </article>`;
     }
 
-    // Add "Show more" button if there are non-featured entries
-    const hiddenCount = entries.length - featuredCount;
-    if (hiddenCount > 0) {
-      html += `<button class="show-more-btn" id="pub-show-more">Show all ${entries.length} publications</button>`;
-    }
-
     container.innerHTML = html;
-
-    // Show more toggle
-    const btn = document.getElementById('pub-show-more');
-    if (btn) {
-      let expanded = false;
-      btn.addEventListener('click', () => {
-        expanded = !expanded;
-        container.querySelectorAll('.media-item.collapsed').forEach(el => {
-          el.classList.toggle('hidden', expanded);
-        });
-        btn.textContent = expanded ? 'Show less' : `Show all ${entries.length} publications`;
-      });
-    }
 
     // Load abstracts from metadata.json
     container.querySelectorAll('article[data-asset]').forEach(article => {

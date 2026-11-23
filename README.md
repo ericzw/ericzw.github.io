@@ -30,7 +30,7 @@ To add news, prepend a line to `data/news.md`:
 - 2026.11: 🎉 [**PPSG**](https://ieeexplore.ieee.org/abstract/document/11803248) is accepted by **TIP**.
 ```
 
-For publications, `@asset: folder-name` points to `assets/papers/folder-name/`, containing `thumbnail.png` and `metadata.json`. The metadata's `text` field supplies the abstract. Use `@featured` to feature an entry.
+For publications, `@asset: folder-name` points to `assets/papers/folder-name/`, containing `thumbnail.png` and `metadata.json`. The metadata's `text` field supplies the abstract. All publications are displayed in a fixed-height, scrollable list.
 
 ## Preview locally
 
